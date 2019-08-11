@@ -1,1 +1,25 @@
 /* You can add global styles to this file, and also import other style files */
+
+body {
+    font-family: 'Open Sans', Tahoma, Geneva, Verdana, sans-serif;
+    color: #404c51;
+}
+
+.treap-label,
+.treap-form label {
+    font-weight: bold;
+    display: block;
+}
+
+.treap-label,
+.treap-form label.treap-inline {
+    font-weight: bold;
+    display: inline;
+}
+
+@media (min-width: 1200px) {
+    .treap-container {
+        width: 1170px;
+        margin: 0 auto;
+    }
+}
