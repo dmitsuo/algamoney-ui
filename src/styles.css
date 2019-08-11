@@ -23,3 +23,19 @@ body {
         margin: 0 auto;
     }
 }
+
+.treap-col-valor-header {
+    width: 120px;
+}
+
+.treap-col-data-header {
+    width: 120px;
+}
+
+.treap-col-valor-content {
+    text-align: right;
+}
+
+.treap-col-data-content {
+    text-align: center;
+}
