@@ -1,0 +1,56 @@
+<div class="treap-container">
+
+    <div class="ui-g">
+        <div class="ui-g-12">
+            <h1>Pessoas</h1>
+        </div>
+
+        <div class="ui-g-12 ui-fluid">
+            <label>Nome</label>
+            <input pInputText type="text">
+        </div>
+
+        <div class="ui-g-12">
+            <button pButton type="submit" label="Pesquisar"></button>
+        </div>
+    </div>
+
+    <div class="ui-g">
+        <div class="ui-g-12">
+            <p-table [value]="pessoas" [rows]="5" [paginator]="true" [responsive]="true">
+                <ng-template let-pessoa pTemplate="header">
+                    <tr>
+                        <th> Nome </th>
+                        <th> Cidade </th>
+                        <th style="width: 80px"> UF </th>
+                        <th style="width: 90px"> Status </th>
+                        <th class="treap-col-acoes-header">Ações</th>
+                    </tr>
+                </ng-template>
+
+                <ng-template pTemplate="body" let-pessoa>
+                    <tr>
+                        <td>{{pessoa.nome}}</td>
+                        <td>{{pessoa.cidade}}</td>
+                        <td style="text-align: center">{{pessoa.estado}}</td>
+                        <td style="text-align: center">
+                            <a href="javascript:;" [pTooltip]="pessoa.ativo ? 'Desativar' : 'Ativar'" tooltipPosition="top">
+                {{pessoa.ativo ? 'Ativo' : 'Inativo'}}
+              </a>
+                        </td>
+                        <td class="treap-col-acoes-content">
+                            <a pButton icon="pi pi-pencil" pTooltip="Editar" tooltipPosition="top"></a>&nbsp;
+                            <button pButton icon="pi pi-trash" pTooltip="Excluir" tooltipPosition="top"></button>
+                        </td>
+                    </tr>
+                </ng-template>
+
+            </p-table>
+        </div>
+
+        <div class="ui-g-12">
+            <a pButton label="Nova Pessoa" class="ui-button-success"></a>
+        </div>
+    </div>
+
+</div>
