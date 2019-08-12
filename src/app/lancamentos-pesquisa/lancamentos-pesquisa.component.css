@@ -1,0 +1,24 @@
+.treap-col-valor-header {
+    width: 120px;
+}
+
+.treap-col-data-header {
+    width: 120px;
+}
+
+.treap-col-valor-content {
+    text-align: right;
+}
+
+.treap-col-data-content {
+    text-align: center;
+}
+
+.treap-col-acoes-header {
+    text-align: center;
+    width: 90px;
+}
+
+.treap-col-acoes-content {
+    white-space: nowrap;
+}

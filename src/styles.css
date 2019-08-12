@@ -1,6 +1,7 @@
 /* You can add global styles to this file, and also import other style files */
 
 body {
+    margin: 0;
     font-family: 'Open Sans', Tahoma, Geneva, Verdana, sans-serif;
     color: #404c51;
 }
@@ -22,29 +23,4 @@ body {
         width: 1170px;
         margin: 0 auto;
     }
-}
-
-.treap-col-valor-header {
-    width: 120px;
-}
-
-.treap-col-data-header {
-    width: 120px;
-}
-
-.treap-col-valor-content {
-    text-align: right;
-}
-
-.treap-col-data-content {
-    text-align: center;
-}
-
-.treap-col-acoes-header {
-    text-align: center;
-    width: 90px;
-}
-
-.treap-col-acoes-content {
-    white-space: nowrap;
 }
