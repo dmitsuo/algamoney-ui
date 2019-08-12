@@ -43,8 +43,8 @@
                         <td class="treap-col-data-content">{{lancamento.dataPagamento}}</td>
                         <td class="treap-col-valor-content" [ngStyle]="{ color: lancamento.tipo === 'DESPESA' ? 'red' : 'blue'}">{{lancamento.valor}}</td>
                         <td class="treap-col-acoes-content">
-                            <a pButton icon="pi pi-pencil"></a>&nbsp;
-                            <button pButton icon="pi pi-trash"></button>
+                            <a pButton icon="pi pi-pencil" tooltipPosition="top" pTooltip="Editar"></a>&nbsp;
+                            <button pButton icon="pi pi-trash" tooltipPosition="top" pTooltip="Excluir"></button>
                         </td>
                     </tr>
                 </ng-template>
