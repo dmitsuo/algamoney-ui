@@ -2,8 +2,15 @@
     <div class="treap-container">
         <div class="ui-g">
             <div class="ui-g-12">
-                <a href="#" class="treap-navbar-toggle"><i class="pi pi-bars"></i></a>
+                <!-- <a href="#" class="treap-navbar-toggle"><i class="pi pi-bars"></i></a> -->
+                <a href="#" (click)="display = true" class="treap-navbar-toggle"><i class="pi pi-bars"></i></a>
             </div>
         </div>
     </div>
 </nav>
+
+<p-sidebar [(visible)]="display" position="right" class="treap-sidebar">
+    <div class="treap-mainmenu-top">ADMINISTRADOR</div>
+
+    <p-panelMenu [model]="items" class="treap-mainmenu"></p-panelMenu>
+</p-sidebar>

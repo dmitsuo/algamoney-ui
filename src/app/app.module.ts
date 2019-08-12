@@ -10,6 +10,10 @@ import { TableModule } from 'primeng/table';
 import { TooltipModule } from 'primeng/tooltip';
 import { LancamentosPesquisaComponent } from './lancamentos-pesquisa/lancamentos-pesquisa.component';
 import { NavbarComponent } from './navbar/navbar.component';
+import { SidebarModule } from 'primeng/sidebar';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { PanelMenuModule } from 'primeng/panelmenu';
+import { MenuItem } from 'primeng/api';
 
 
 @NgModule({
@@ -23,7 +27,10 @@ import { NavbarComponent } from './navbar/navbar.component';
     InputTextModule,
     ButtonModule,
     TableModule,
-    TooltipModule
+    TooltipModule,
+    SidebarModule,
+    BrowserAnimationsModule,
+    PanelMenuModule
   ],
   providers: [],
   bootstrap: [AppComponent]

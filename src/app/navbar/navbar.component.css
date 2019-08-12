@@ -6,3 +6,9 @@
 .treap-navbar-toggle {
     color: #ffffff;
 }
+
+.treap-mainmenu-top {
+    padding: 15px 10px;
+    font-weight: bold;
+    border-bottom: 1px solid #525151;
+}
