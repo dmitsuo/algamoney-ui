@@ -32,6 +32,7 @@
                         <th class="treap-col-data-header">Vencimento</th>
                         <th class="treap-col-data-header">Pagamento</th>
                         <th class="treap-col-valor-header">Valor</th>
+                        <th class="treap-col-acoes-header">Ações</th>
                     </tr>
                 </ng-template>
                 <ng-template pTemplate="body" let-lancamento>
@@ -40,7 +41,11 @@
                         <td>{{lancamento.descricao}}</td>
                         <td class="treap-col-data-content">{{lancamento.dataVencimento}}</td>
                         <td class="treap-col-data-content">{{lancamento.dataPagamento}}</td>
-                        <td class="treap-col-valor-content">{{lancamento.valor}}</td>
+                        <td class="treap-col-valor-content" [ngStyle]="{ color: lancamento.tipo === 'DESPESA' ? 'red' : 'blue'}">{{lancamento.valor}}</td>
+                        <td class="treap-col-acoes-content">
+                            <a pButton icon="pi pi-pencil"></a>&nbsp;
+                            <button pButton icon="pi pi-trash"></button>
+                        </td>
                     </tr>
                 </ng-template>
             </p-table>

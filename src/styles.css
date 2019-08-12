@@ -39,3 +39,12 @@ body {
 .treap-col-data-content {
     text-align: center;
 }
+
+.treap-col-acoes-header {
+    text-align: center;
+    width: 90px;
+}
+
+.treap-col-acoes-content {
+    white-space: nowrap;
+}
