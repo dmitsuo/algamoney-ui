@@ -12,3 +12,24 @@
     font-weight: bold;
     border-bottom: 1px solid #525151;
 }
+
+/* .treap-sidebar {
+    font-weight: bold;
+}
+
+.treap-sidebar .ui-sidebar {
+    padding: 0;
+    overflow: auto;
+}
+
+.treap-mainmenu .ui-panelmenu-header {
+    display: none;
+}
+
+.treap-mainmenu .ui-panelmenu .ui-panelmenu-content {
+    border: 0;
+}
+
+.treap-sidebar .ui-sidebar-close {
+    display: none;
+} */
