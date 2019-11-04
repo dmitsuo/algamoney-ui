@@ -5,6 +5,7 @@ import { AppComponent } from './app.component';
 
 // Imports adicionais
 import { InputTextModule } from 'primeng/inputtext';
+import { InputTextareaModule } from 'primeng/inputtextarea';
 import { ButtonModule } from 'primeng/button';
 import { TableModule } from 'primeng/table';
 import { TooltipModule } from 'primeng/tooltip';
@@ -34,7 +35,8 @@ import { LancamentoCadastroComponent } from './lancamento-cadastro/lancamento-ca
     TooltipModule,
     SidebarModule,
     BrowserAnimationsModule,
-    PanelMenuModule
+    PanelMenuModule,
+    InputTextareaModule
   ],
   providers: [],
   bootstrap: [AppComponent]

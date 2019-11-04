@@ -70,3 +70,26 @@ body {
 .treap-col-acoes-content {
     white-space: nowrap;
 }
+
+body button.ui-button {
+    margin-right: .5em;
+}
+
+/* Botao INFO - INICIO */
+body button.ui-button.ui-state-default.ui-button-info {
+    /* Normal */
+    border-color: #57B6DE;
+    background-color: #57B6DE;    
+}
+body button.ui-button.ui-state-default.ui-button-info:enabled:hover,
+body button.ui-button.ui-state-default.ui-button-info:enabled:focus {
+    /* Com foco ou sob o mouse */
+    border-color: #389AC3;
+    background-color: #389AC3;    
+}
+body button.ui-button.ui-state-default.ui-button-info:enabled:active {
+    /* Clicado */
+    border-color: #1A7EA8;
+    background-color: #1A7EA8;    
+}
+/* Botao INFO - FIM */
