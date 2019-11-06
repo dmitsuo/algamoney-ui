@@ -6,6 +6,10 @@ body {
     color: #404c51;
 }
 
+a {
+    color: #337ab7;
+}
+
 .treap-label,
 .treap-form label {
     font-weight: bold;
