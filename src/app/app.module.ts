@@ -11,6 +11,8 @@ import { TableModule } from 'primeng/table';
 import { TooltipModule } from 'primeng/tooltip';
 import { CalendarModule } from 'primeng/calendar';
 import { SelectButtonModule } from 'primeng/selectbutton';
+import { DropdownModule } from 'primeng/dropdown';
+import { CurrencyMaskModule } from "ng2-currency-mask";
 
 import { LancamentosPesquisaComponent } from './lancamentos-pesquisa/lancamentos-pesquisa.component';
 import { NavbarComponent } from './navbar/navbar.component';
@@ -41,7 +43,9 @@ import { LancamentoCadastroComponent } from './lancamento-cadastro/lancamento-ca
     PanelMenuModule,
     InputTextareaModule,
     CalendarModule,
-    SelectButtonModule
+    SelectButtonModule,
+    DropdownModule,
+    CurrencyMaskModule    
   ],
   providers: [],
   bootstrap: [AppComponent]
