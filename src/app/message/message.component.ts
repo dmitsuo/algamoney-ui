@@ -6,10 +6,10 @@ import { FormControl } from '@angular/forms';
   template: `
   <div *ngIf="temErro()" class="ui-messages ui-messages-error">
     {{ text }}
-  </div>  
+  </div>
   `,
   styles: [`
-  .ui-messages.ui-messages-error {    
+  .ui-messages.ui-messages-error {
     background-color: #ff0000;
     color: #ffffff;
     border-radius: 4px;

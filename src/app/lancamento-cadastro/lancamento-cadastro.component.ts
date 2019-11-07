@@ -21,7 +21,7 @@ export class LancamentoCadastroComponent implements OnInit {
     { label: 'João da Silva', value: 4 },
     { label: 'Sebastião Souza', value: 9 },
     { label: 'Maria Abadia', value: 3 },
-  ];  
+  ];
 
   constructor() { }
 
