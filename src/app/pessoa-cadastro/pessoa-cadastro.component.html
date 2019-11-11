@@ -1,5 +1,5 @@
 <div class="treap-container treap-form">
-    <form>
+    <form #f="ngForm">
         <div class="ui-g">
             <div class="ui-g-12 ">
                 <h1>Nova Pessoa</h1>
@@ -47,7 +47,7 @@
             </div>
 
             <div class="ui-g-12">
-                <button pButton type="submit" label="Salvar"></button>
+                <button pButton type="submit" label="Salvar" [disabled]="f.invalid"></button>
                 <button pButton type="button" label="Novo" class="ui-button-info"></button>
                 <a href="#">Voltar para a pesquisa</a>
 
