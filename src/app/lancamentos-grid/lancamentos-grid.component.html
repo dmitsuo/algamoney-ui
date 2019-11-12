@@ -1,0 +1,26 @@
+<p-table [value]="lancamentos" [value]="lancamentos" [paginator]="true" [rows]="5" [responsive]="true">
+  <ng-template pTemplate="header">
+    <tr>
+      <th>Pessoa</th>
+      <th>Descricao</th>
+      <th class="treap-col-data-header">Vencimento</th>
+      <th class="treap-col-data-header">Pagamento</th>
+      <th class="treap-col-valor-header">Valor</th>
+      <th class="treap-col-acoes-header">Ações</th>
+    </tr>
+  </ng-template>
+  <ng-template pTemplate="body" let-lancamento>
+    <tr>
+      <td>{{lancamento.pessoa}}</td>
+      <td>{{lancamento.descricao}}</td>
+      <td class="treap-col-data-content">{{lancamento.dataVencimento | date:'dd/MM/yyyy' }}</td>
+      <td class="treap-col-data-content">{{lancamento.dataPagamento | date:'dd/MM/yyyy' }}</td>
+      <td class="treap-col-valor-content" [ngStyle]="{ color: lancamento.tipo === 'DESPESA' ? 'red' : 'blue'}">
+        {{lancamento.valor | number:'1.2-2'}}</td>
+      <td class="treap-col-acoes-content">
+        <a pButton icon="pi pi-pencil" tooltipPosition="top" pTooltip="Editar"></a>&nbsp;
+        <button pButton icon="pi pi-trash" tooltipPosition="top" pTooltip="Excluir"></button>
+      </td>
+    </tr>
+  </ng-template>
+</p-table>

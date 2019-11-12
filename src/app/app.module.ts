@@ -29,6 +29,8 @@ import { LancamentoCadastroComponent } from './lancamento-cadastro/lancamento-ca
 import { PessoaCadastroComponent } from './pessoa-cadastro/pessoa-cadastro.component';
 import { FormsModule } from '@angular/forms';
 import { MessageComponent } from './message/message.component';
+import { LancamentosGridComponent } from './lancamentos-grid/lancamentos-grid.component';
+import { PessoasGridComponent } from './pessoas-grid/pessoas-grid.component';
 
 
 @NgModule({
@@ -39,7 +41,9 @@ import { MessageComponent } from './message/message.component';
     PessoasPesquisaComponent,
     LancamentoCadastroComponent,
     PessoaCadastroComponent,
-    MessageComponent
+    MessageComponent,
+    LancamentosGridComponent,
+    PessoasGridComponent
   ],
   imports: [
     FormsModule,
