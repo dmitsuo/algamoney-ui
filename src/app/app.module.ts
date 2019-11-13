@@ -12,37 +12,31 @@ import { TooltipModule } from 'primeng/tooltip';
 import { CalendarModule } from 'primeng/calendar';
 import { SelectButtonModule } from 'primeng/selectbutton';
 import { DropdownModule } from 'primeng/dropdown';
-import { CurrencyMaskModule } from 'ng2-currency-mask';
 import { InputMaskModule } from 'primeng/inputmask';
 import {MessagesModule} from 'primeng/messages';
 import {MessageModule} from 'primeng/message';
 
 
-import { LancamentosPesquisaComponent } from './lancamentos-pesquisa/lancamentos-pesquisa.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { SidebarModule } from 'primeng/sidebar';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { PanelMenuModule } from 'primeng/panelmenu';
 import { MenuItem } from 'primeng/api';
 import { PessoasPesquisaComponent } from './pessoas-pesquisa/pessoas-pesquisa.component';
-import { LancamentoCadastroComponent } from './lancamento-cadastro/lancamento-cadastro.component';
 import { PessoaCadastroComponent } from './pessoa-cadastro/pessoa-cadastro.component';
 import { FormsModule } from '@angular/forms';
 import { MessageComponent } from './message/message.component';
-import { LancamentosGridComponent } from './lancamentos-grid/lancamentos-grid.component';
 import { PessoasGridComponent } from './pessoas-grid/pessoas-grid.component';
+import { LancamentosModule } from './lancamentos/lancamentos.module';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    LancamentosPesquisaComponent,
     NavbarComponent,
     PessoasPesquisaComponent,
-    LancamentoCadastroComponent,
     PessoaCadastroComponent,
     MessageComponent,
-    LancamentosGridComponent,
     PessoasGridComponent
   ],
   imports: [
@@ -59,10 +53,10 @@ import { PessoasGridComponent } from './pessoas-grid/pessoas-grid.component';
     CalendarModule,
     SelectButtonModule,
     DropdownModule,
-    CurrencyMaskModule,
     InputMaskModule,
     MessagesModule,
-    MessageModule
+    MessageModule,
+    LancamentosModule
   ],
   providers: [],
   bootstrap: [AppComponent]
