@@ -1,7 +1,6 @@
 import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
-import { MessageComponent } from './message/message.component';
 import { LancamentosModule } from './lancamentos/lancamentos.module';
 import { PessoasModule } from './pessoas/pessoas.module';
 import { SidebarModule } from 'primeng/sidebar';
@@ -13,7 +12,6 @@ import { BrowserModule } from '@angular/platform-browser';
   declarations: [
     AppComponent,
     NavbarComponent,
-    MessageComponent
   ],
   imports: [
     PessoasModule,

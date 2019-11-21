@@ -25,7 +25,7 @@ export class MessageComponent {
   @Input() text: string;
 
   temErro(): boolean {
-    return this.control.hasError(this.error) && this.control.dirty;
+    return this != null && this.control != null && this.control.hasError(this.error) && this.control.dirty;
   }
 
 

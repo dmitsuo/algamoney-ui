@@ -16,10 +16,7 @@ import { CalendarModule } from 'primeng/calendar';
 import { SelectButtonModule } from 'primeng/selectbutton';
 import { DropdownModule } from 'primeng/dropdown';
 import { CurrencyMaskModule } from 'ng2-currency-mask';
-import { MessagesModule } from 'primeng/messages';
-import { MessageModule } from 'primeng/message';
-
-
+import { SharedModule } from '../shared/shared.module';
 
 @NgModule({
   declarations: [
@@ -42,8 +39,7 @@ import { MessageModule } from 'primeng/message';
     SelectButtonModule,
     DropdownModule,
     CurrencyMaskModule,
-    MessagesModule,
-    MessageModule
+    SharedModule
   ],
   exports: [
     LancamentosPesquisaComponent,

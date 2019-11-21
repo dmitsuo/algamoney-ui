@@ -10,6 +10,7 @@ import { TableModule } from 'primeng/table';
 import { TooltipModule } from 'primeng/tooltip';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { InputMaskModule } from 'primeng/inputmask';
+import { SharedModule } from './../shared/shared.module';
 
 
 @NgModule({
@@ -26,7 +27,8 @@ import { InputMaskModule } from 'primeng/inputmask';
     TableModule,
     TooltipModule,
     BrowserAnimationsModule,
-    InputMaskModule
+    InputMaskModule,
+    SharedModule
   ],
   exports: [
     PessoasPesquisaComponent,
